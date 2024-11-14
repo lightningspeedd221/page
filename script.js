@@ -36,16 +36,15 @@ window.addEventListener("load", async function() {
 
 function Video()
 {
-    if(document.getElementById("content").style.display == "block")
-    {
-        const video = document.getElementById('videoBackground');
-        video.style.display = 'block';  // Show the video
+
+    const video = document.getElementById('videoBackground');
+    video.style.display = 'block';  // Show the video
         // Create an Audio object
-        const sound = new Audio('sounds/kingvon.mp3');
-        sound.volume = 0.5;
-        // Play the sound
-        sound.play();
-        video.play();                   // Play the video
-    }
+    const sound = new Audio('sounds/kingvon.mp3');
+    sound.volume = 0.5;
+     // Play the sound
+    sound.play();
+    video.play();                   // Play the video
+    
 
 }
