@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+        <!-- Loading Screen -->
+    <div id="loading-screen">
+        <div class="loader"></div>
+        <p>Loading, please wait...</p>
+    </div>
+
+    <div id="content" style="display: none;">
+        <!-- Video element (initially hidden) -->
+         
+        <video id="videoBackground" muted loop>
+            <source src="videos/kingvon.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <p>Software Engineer (Self Learned)</p>
+        <p>Programming Languages Learned:</p>
+        <p class="Languages">C++ C Python HTML CSS JS</p>
+        <button onclick="Pages(1)">Back To Index</button>
+        <!--<button onclick="Video()">Video</button>-->
+    </div>
+        
+
+</body>
+</html>
