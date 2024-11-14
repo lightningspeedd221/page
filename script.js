@@ -32,7 +32,7 @@ window.addEventListener("load", async function() {
 
 
 function Video() {
-    alert("If video Is Delayed Then Refresh!");
+    //alert("If video Is Delayed Then Refresh!");
     // Get video and audio elements
     const video = document.getElementById('backgroundVideo');
     const audio = document.getElementById('backgroundAudio');
