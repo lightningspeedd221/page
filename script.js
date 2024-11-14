@@ -31,20 +31,16 @@ window.addEventListener("load", async function() {
     await delay(1000);
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("content").style.display = "block";
-    Video();
+    //Video();
 });//
 
-function Video()
-{
-    const video = document.getElementById('videoBackground');
-    video.style.display = 'block';  // Show the video
-        // Create an Audio object
-    const sound = new Audio('sounds/kingvon.mp3');
-    sound.volume = 0.5;
-    // Play the sound
-    delay(1000);
-    sound.play();
-    video.play();                   // Play the video
-    
 
+function Video() {
+    // Get video and audio elements
+    const video = document.getElementById('backgroundVideo');
+    const audio = document.getElementById('backgroundAudio');
+    audio.volume = 0.4;
+    // Play both at the same time
+    video.play();
+    audio.play();
 }

@@ -15,24 +15,33 @@ body {
     font-family: Arial, sans-serif;
 } 
 h1 {
-    color: #1900ff;
+    color: #ffffff9a;
 }
 p {
-    color: #1900ff;
+    color: #ffffff9a;
     font-style: italic;
 }
 .content {
     text-align: center;
 }
-
+#backgroundVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Cover entire background */
+    z-index: -1;       /* Behind other content */
+    filter: blur(2px); /* Apply blur on hover */
+}
 
 .Languages {
-    color: #1900ff
+    color: #ffffff9a
 }
 /* Styling the button */
 button {
     /*margin-top: 100px;*/
-    background-color: #1900ff; /* Green background */
+    background-color: #ee00ffb6; /* Green background */
     color: white; /* White text */
     padding: 12px 24px; /* Padding */
     font-size: 16px; /* Font size */
@@ -44,13 +53,13 @@ button {
 
 /* Hover effect */
 button:hover {
-    background-color: #1000a2; /* Darker Blue on hover */
+    background-color: #90009bb6; /* Darker Blue on hover */
     transform: scale(1.05); /* Slightly larger on hover */
 }
 
 /* Active effect */
 button:active {
-    background-color: #0b006b; /* Even darker Blue when clicked */
+    background-color: #74007cb6; /* Even darker Blue when clicked */
     transform: scale(0.95); /* Slightly smaller on click */
 }
 /* Loading screen styles */
@@ -72,25 +81,14 @@ button:active {
 /* Loader animation */
 .loader {
     border: 8px solid #f3f3f3;
-    border-top: 8px solid #1000a2; /* Blue loader color */
+    border-top: 8px solid #ee00ff; /* Blue loader color */
     border-radius: 50%;
     width: 50px;
     height: 50px;
     animation: spin 1s linear infinite;
     margin-bottom: 20px;
+    
 }
-        /* Video background styling */
-        #videoBackground {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: none; /* Start hidden, show when button is clicked */
-            z-index: -1;   /* Behind other content */
-            filter: blur(1px); /* Apply a 5px blur */
-        }
 /* Spin animation */
 @keyframes spin {
     0% { transform: rotate(0deg); }
@@ -103,11 +101,11 @@ button:active {
     padding: 20px;
 }
 input {
-    color: #ffffff;
+    color: #ffffff9a;
     background-color: #000000;
 }
 input[type="text"] {
-    color: #ffffff;
+    color: #ffffff9a;
     background-color: #000000;
     padding: 10px;
     font-size: 16px;
@@ -117,7 +115,7 @@ input[type="text"] {
     margin: 10px 0;
 }
 textarea {
-    color: #ffffff;
+    color: #ffffff9a;
     background-color: #000000;
 }
 input[type="text"]:focus {
