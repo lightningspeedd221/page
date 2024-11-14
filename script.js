@@ -36,7 +36,7 @@ window.addEventListener("load", async function() {
 
 function Video()
 {
-
+    delay(1000);
     const video = document.getElementById('videoBackground');
     video.style.display = 'block';  // Show the video
         // Create an Audio object
