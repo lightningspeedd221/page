@@ -14,10 +14,6 @@ function Pages(pagenbr)
     {
         window.location.href = "about.html";
     }
-    else if(pagenbr == 3)
-    {
-        window.location.href = "spam.html";
-    }
     else
     {
         alert("Unknown page");
@@ -28,7 +24,7 @@ function delay(ms) {
 }
 //* Hide loading screen when page is loaded
 window.addEventListener("load", async function() {
-    await delay(1000);
+    await delay(2000);
     document.getElementById("loading-screen").style.display = "none";
     document.getElementById("content").style.display = "block";
     //Video();
@@ -36,6 +32,7 @@ window.addEventListener("load", async function() {
 
 
 function Video() {
+    alert("If video is delayed then Refresh");
     // Get video and audio elements
     const video = document.getElementById('backgroundVideo');
     const audio = document.getElementById('backgroundAudio');
