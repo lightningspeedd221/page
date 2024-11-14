@@ -44,8 +44,8 @@ function Video()
         const sound = new Audio('sounds/kingvon.mp3');
         sound.volume = 0.5;
         // Play the sound
-        video.play();                   // Play the video
         sound.play();
+        video.play();                   // Play the video
     }
 
 }
