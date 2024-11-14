@@ -36,13 +36,13 @@ window.addEventListener("load", async function() {
 
 function Video()
 {
-    delay(1000);
     const video = document.getElementById('videoBackground');
     video.style.display = 'block';  // Show the video
         // Create an Audio object
     const sound = new Audio('sounds/kingvon.mp3');
     sound.volume = 0.5;
-     // Play the sound
+    // Play the sound
+    delay(1000);
     sound.play();
     video.play();                   // Play the video
     
