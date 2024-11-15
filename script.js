@@ -30,14 +30,34 @@ window.addEventListener("load", async function() {
     //Video();
 });//
 
+// Disable right-click
+document.addEventListener('contextmenu', (e) => e.preventDefault());
 
-function Video() {
-    //alert("If video Is Delayed Then Refresh!");
-    // Get video and audio elements
+function ctrlShiftKey(e, keyCode) {
+  return e.ctrlKey && e.shiftKey && e.keyCode === keyCode.charCodeAt(0);
+}
+
+document.onkeydown = (e) => {
+  // Disable F12, Ctrl + Shift + I, Ctrl + Shift + J, Ctrl + U
+  if (
+    event.keyCode === 123 ||
+    ctrlShiftKey(e, 'I') ||
+    ctrlShiftKey(e, 'J') ||
+    ctrlShiftKey(e, 'C') || 
+    (e.ctrlKey && e.keyCode === 'U'.charCodeAt(0))
+  )
+    return false;
+};
+
+document.addEventListener('DOMContentLoaded',async () => {
+    delay(2000);
+    // Select video and audio elements
     const video = document.getElementById('backgroundVideo');
     const audio = document.getElementById('backgroundAudio');
-    audio.volume = 0.4;
-    // Play both at the same time
+    await delay(2000);
+    // Play video and audio
     video.play();
-    audio.play();
-}
+    audio.play().catch(error => {
+        console.log("Audio autoplay failed. User interaction may be required:", error);
+    });
+});
